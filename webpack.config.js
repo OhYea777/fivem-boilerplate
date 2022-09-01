@@ -10,6 +10,7 @@ const buildPath = path.resolve(__dirname, 'dist');
 // Create client webpack config
 const client = {
   entry: './src/index.client.ts',
+  target: 'node',
 
   module: {
     rules: [
@@ -55,6 +56,7 @@ const client = {
 // Create server webpack config
 const server = {
   entry: './src/index.server.ts',
+  target: 'node',
 
   module: {
     rules: [
@@ -95,9 +97,7 @@ const server = {
   output: {
     path: buildPath,
     filename: 'server.js'
-  },
-
-  target: 'node'
+  }
 };
 
 /**
