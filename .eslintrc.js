@@ -20,16 +20,18 @@ module.exports = {
   plugins: ['@typescript-eslint'],
 
   rules: {
+    'no-new': 'off',
     'max-len': 'off',
     'no-shadow': 'off',
     'comma-dangle': 'off',
     'no-unused-vars': 'off',
+    'linebreak-style': 'off',
     'consistent-return': 'off',
     'no-param-reassign': 'off',
     'no-underscore-dangle': 'off',
     'class-methods-use-this': 'off',
+    'no-promise-executor-return': 'off',
     'import/prefer-default-export': 'off',
-    'linebreak-style': 'off',
 
     semi: ['error', 'always'],
     '@typescript-eslint/no-unused-vars': ['error'],

@@ -20,6 +20,7 @@ const client = {
           {
             loader: 'ts-loader',
             options: {
+              configFile: '.config/tsconfig.client.json',
               transpileOnly: true
             }
           }
@@ -46,7 +47,7 @@ const client = {
   },
 
   output: {
-    path: path.resolve(buildPath, 'client'),
+    path: buildPath,
     filename: 'client.js'
   }
 };
@@ -64,6 +65,7 @@ const server = {
           {
             loader: 'ts-loader',
             options: {
+              configFile: '.config/tsconfig.server.json',
               transpileOnly: true
             }
           }
@@ -91,7 +93,7 @@ const server = {
   },
 
   output: {
-    path: path.resolve(buildPath, 'server'),
+    path: buildPath,
     filename: 'server.js'
   },
 

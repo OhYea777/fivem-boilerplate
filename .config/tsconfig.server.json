@@ -1,6 +1,7 @@
 {
   "include": ["../src/index.server.ts", "../src/**/common/**/*", "../src/**/server/**/*"],
   "exclude": ["node_modules", "**/__tests__/"],
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "types": ["@citizenfx/server"]
   }
