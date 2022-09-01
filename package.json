@@ -1,0 +1,51 @@
+{
+  "name": "fivem-boilerplate",
+  "version": "1.0.0",
+  "description": "Node.js boilerplate for FiveM module folder structure",
+  "main": "index.js",
+  "private": "true",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch --progress",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx -f ./node_modules/eslint-friendly-formatter src",
+    "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx -f ./node_modules/eslint-friendly-formatter --fix src",
+    "postinstall": "rimraf .yarn.installed && echo hax > .yarn.installed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OhYea777/fivem-boilerplate.git"
+  },
+  "author": "OhYea777 <jack@jwt.nz> (https://jwt.nz)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OhYea777/fivem-boilerplate/issues"
+  },
+  "homepage": "https://github.com/OhYea777/fivem-boilerplate#readme",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.9",
+    "@citizenfx/client": "^2.0.5848-1",
+    "@citizenfx/server": "^2.0.5848-1",
+    "@types/node": "^18.7.14",
+    "@types/webpack-env": "^1.18.0",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-import-resolver-webpack": "^0.13.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-webpack-plugin": "^3.2.0",
+    "fork-ts-checker-webpack-plugin": "^7.2.13",
+    "lint-staged": "^13.0.3",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^9.3.1",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
+    "typescript": "^4.8.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "eslint --f ./node_modules/eslint-friendly-formatter"
+  }
+}

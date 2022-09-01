@@ -1,0 +1,7 @@
+{
+  "include": ["../src/index.server.ts", "../src/**/common/**/*", "../src/**/server/**/*"],
+  "exclude": ["node_modules", "**/__tests__/"],
+  "compilerOptions": {
+    "types": ["@citizenfx/server"]
+  }
+}
